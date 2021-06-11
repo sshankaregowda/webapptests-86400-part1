@@ -1,5 +1,3 @@
-// Copyright 2019 BigTinCan Mobile Pty Ltd. All Rights Reserved.
-
 /**
  * Checks if the given element exists in the DOM.
  *

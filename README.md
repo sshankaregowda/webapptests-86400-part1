@@ -31,7 +31,7 @@ pdx-dev
 
 ##Prerequisites to clone and setup the framework
 
-1. Checkout repo from github. 
+1. Checkout repo from github --> https://github.com/sshankaregowda/webapptests-86400-part1.git 
 
 2. Import the repo to VS code.
 

@@ -1,5 +1,3 @@
-// Copyright 2019 BigTinCan Mobile Pty Ltd. All Rights Reserved.
-
 /**
  * Click the Web Element either using XPATH or CSS.
  *
