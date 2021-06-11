@@ -1,0 +1,88 @@
+{
+  "src_folders": [
+    "tests/e2e/testcases"
+  ],
+  "output_folder": "reports",
+  "custom_commands_path": "tests/e2e/custom-commands",
+  "custom_assertions_path": "tests/e2e/custom-assertions",
+  "page_objects_path": "tests/e2e/pages",
+  "globals_path": "./global.js",
+  "test_workers": {
+    "enabled": false,
+    "workers": "auto"
+  },
+  "selenium": {
+    "start_process": false,
+    "server_path": "./lib/drivers/selenium-server-standalone-3.141.59.jar",
+    "log_path": "",
+    "cli_args": {
+      "webdriver.chrome.driver": "./lib/drivers/chromedriver",
+      "webdriver.gecko.driver": "./lib/drivers/geckodriver",
+      "webdriver.edge.driver": ""
+    }
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost:3000",
+      "selenium_port": 5555,
+      "selenium_host": "chrome",
+      "silent": true,
+      "screenshots": {
+        "enabled": true,
+        "path": "screenshots/failed",
+        "on_failure": true,
+        "on_error": true
+      },
+      "globals": {
+      "waitForConditionPollInterval": 5000,
+      "waitForConditionTimeout": 30000,
+      "asyncHookTimeout":40000
+      },
+      "desiredCapabilities": {
+        "chromeOptions": {
+          "args": ["start-fullscreen"]
+      },
+        "browserName": "chrome",
+        "marionette": true,
+        "loggingPrefs": { "browser": "ALL" }
+      }
+    },
+    "syd-dev": {
+      "launch_url" : "https://www.ebay.com.au"
+    },
+    "pdx-dev": {
+      "launch_url" : "https://www.ebay.com.au"
+    },
+    "syd-prod": {
+      "launch_url" : "https://www.ebay.com.au"
+    },
+    "fra-prod": {
+      "launch_url" : "https://www.ebay.com.au"
+    },
+    "pdx-prod": {
+      "launch_url" : "https://www.ebay.com.au"
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "project": "Hub Web App V5",
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "elementScrollBehavior": 1,
+        "loggingPrefs": { "browser": "ALL" }
+      }
+    },
+    "edge": {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
+      }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "marionette": true
+      }
+    }
+  }
+}
+
